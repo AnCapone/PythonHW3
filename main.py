@@ -33,29 +33,70 @@
 
 # Task 2. Користувач вводить два числа. Визначити, чи рівні ці числа, і, якщо ні, вивести їх на екран у
 # порядку зростання
-while True:  # запуск цикла для введення коректного значення першого числа
-    try:
-        numberOne = float(input("Please, enter first number: "))  # зчитування числа з клавіатури. Використовуємо float
-        # для дробних чисел
-    except ValueError as error:  # захоплюємо помилку невірного значення і повертаємось на зчитування числа до тих пір,
-        # поки не буде введене корректне число
-        print("Incorrect input. Only numerical values available!")
-        continue
-    break  # якщо введене коректне число, завершуємо виконання цикла
+# while True:  # запуск цикла для введення коректного значення першого числа
+#     try:
+#         numberOne = float(input("Please, enter first number: "))  # зчитування числа з клавіатури. Використовуємо
+#         # float для дробних чисел
+#     except ValueError as error:  # захоплюємо помилку невірного значення і повертаємось на зчитування числа
+#         # до тих пір, поки не буде введене корректне число
+#         print("Incorrect input. Only numerical values available!")
+#         continue
+#     break  # якщо введене коректне число, завершуємо виконання цикла
+#
+# while True: # запуск цикла для введення коректного значення другого числа (все по аналогії з першим циклом)
+#     try:
+#         numberTwo = float(input("Please, enter second number: "))
+#     except ValueError as error:
+#         print("Incorrect input. Only numerical values available!")
+#         continue
+#     break
+#
+# if numberOne < numberTwo:  # порівняння чисел та виведення результату
+#     print("Numbers are not equal: ", numberOne, numberTwo)
+#
+# elif numberTwo < numberOne:
+#     print("Numbers are not equal: ", numberTwo, numberOne)
+#
+# elif numberTwo == numberOne:
+#     print("Numbers are equal!")
 
-while True: # запуск цикла для введення коректного значення другого числа (все по аналогії з першим циклом)
+# 3. Користувач вводить два числа та матем дію: + - * або /
+# Залежно від введеної матем дії вивести результат
+while True:
     try:
-        numberTwo = float(input("Please, enter second number: "))
+        numberOne = float(input("Please, enter first number: "))
     except ValueError as error:
-        print("Incorrect input. Only numerical values available!")
+        print("Incorrect input. Use only numerical values!")
         continue
     break
 
-if numberOne < numberTwo:  # порівняння чисел та виведення результату
-    print("Numbers are not equal: ", numberOne, numberTwo)
+while True:
+    try:
+        numberTwo = float(input("Please, enter second number: "))
+    except ValueError as error:
+        print("Incorrect input. Use only numerical values!")
+        continue
+    break
 
-elif numberTwo < numberOne:
-    print("Numbers are not equal: ", numberTwo, numberOne)
-
-elif numberTwo == numberOne:
-    print("Numbers are equal!")
+while True:
+    mathOperator = input("Please, enter +, -, *, / to perform a mathematical operation with entered numbers: ")
+    match mathOperator:
+        case "+":
+            print("Sum of entered numbers: ", numberOne + numberTwo)
+            break
+        case "-":
+            print("Difference of entered numbers: ", numberOne - numberTwo)
+            break
+        case "*":
+            print("Product of entered numbers: ", numberOne * numberTwo)
+            break
+        case "/":
+            try:
+                print("Quotient of entered numbers: ", numberOne / numberTwo)
+                break
+            except ZeroDivisionError as error
+                print("Division by zero!")
+                break
+        case _:
+            print("Invalid symbol. Please, use +, -, *, / only!")
+            continue
