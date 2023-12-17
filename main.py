@@ -94,7 +94,7 @@ while True:
             try:
                 print("Quotient of entered numbers: ", numberOne / numberTwo)
                 break
-            except ZeroDivisionError as error
+            except ZeroDivisionError as error:
                 print("Division by zero!")
                 break
         case _:
