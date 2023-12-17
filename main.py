@@ -33,15 +33,17 @@
 
 # Task 2. Користувач вводить два числа. Визначити, чи рівні ці числа, і, якщо ні, вивести їх на екран у
 # порядку зростання
-while True:
+while True:  # запуск цикла для введення коректного значення першого числа
     try:
-        numberOne = float(input("Please, enter first number: "))
-    except ValueError as error:
+        numberOne = float(input("Please, enter first number: "))  # зчитування числа з клавіатури. Використовуємо float
+        # для дробних чисел
+    except ValueError as error:  # захоплюємо помилку невірного значення і повертаємось на зчитування числа до тих пір,
+        # поки не буде введене корректне число
         print("Incorrect input. Only numerical values available!")
         continue
-    break
+    break  # якщо введене коректне число, завершуємо виконання цикла
 
-while True:
+while True: # запуск цикла для введення коректного значення другого числа (все по аналогії з першим циклом)
     try:
         numberTwo = float(input("Please, enter second number: "))
     except ValueError as error:
@@ -49,7 +51,7 @@ while True:
         continue
     break
 
-if numberOne < numberTwo:
+if numberOne < numberTwo:  # порівняння чисел та виведення результату
     print("Numbers are not equal: ", numberOne, numberTwo)
 
 elif numberTwo < numberOne:
