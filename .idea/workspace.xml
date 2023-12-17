@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d8e204a-85b8-4c7a-8b53-e9d5913ab086" name="Changes" comment="Add inline comments to Second Task">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-    </list>
+    <list default="true" id="5d8e204a-85b8-4c7a-8b53-e9d5913ab086" name="Changes" comment="Add inline comments to Second Task" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,14 +27,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.main.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/ancapone/Projects/pythonProject5&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/Users/ancapone/Projects/pythonProject5"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="pythonProject5" />
@@ -102,7 +99,31 @@
       <option name="project" value="LOCAL" />
       <updated>1702821993991</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="implement third task">
+      <option name="closed" value="true" />
+      <created>1702826306064</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1702826306064</updated>
+    </task>
+    <task id="LOCAL-00005" summary="implement third task">
+      <option name="closed" value="true" />
+      <created>1702826773338</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1702826773338</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add inline comments to task 3">
+      <option name="closed" value="true" />
+      <created>1702827264589</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1702827264589</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -119,6 +140,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Implement Second Task" />
     <MESSAGE value="Add inline comments to Second Task" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add inline comments to Second Task" />
+    <MESSAGE value="implement third task" />
+    <MESSAGE value="Add inline comments to task 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add inline comments to task 3" />
   </component>
 </project>
