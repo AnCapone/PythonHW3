@@ -33,15 +33,21 @@
 
 # Task 2. Користувач вводить два числа. Визначити, чи рівні ці числа, і, якщо ні, вивести їх на екран у
 # порядку зростання
-try:
-    numberOne = int(input("Please, enter first number: "))
-except ValueError as error:
-    print("Incorrect input. Only numerical values available!")
+while True:
+    try:
+        numberOne = float(input("Please, enter first number: "))
+    except ValueError as error:
+        print("Incorrect input. Only numerical values available!")
+        continue
+    break
 
-try:
-    numberTwo = int(input("Please, enter second number: "))
-except ValueError as error:
-    print("Incorrect input. Only numerical values available!")
+while True:
+    try:
+        numberTwo = float(input("Please, enter second number: "))
+    except ValueError as error:
+        print("Incorrect input. Only numerical values available!")
+        continue
+    break
 
 if numberOne < numberTwo:
     print("Numbers are not equal: ", numberOne, numberTwo)
