@@ -62,23 +62,23 @@
 
 # 3. Користувач вводить два числа та матем дію: + - * або /
 # Залежно від введеної матем дії вивести результат
-while True:
-    try:
+while True:  # запуск цикла для введення коректного значення першого числа
+    try:  # перевірка на коректність введеного числа
         numberOne = float(input("Please, enter first number: "))
     except ValueError as error:
         print("Incorrect input. Use only numerical values!")
         continue
     break
 
-while True:
-    try:
+while True:  # запуск цикла для введення коректного значення першого числа
+    try:  # перевірка на коректність введеного числа
         numberTwo = float(input("Please, enter second number: "))
     except ValueError as error:
         print("Incorrect input. Use only numerical values!")
         continue
     break
 
-while True:
+while True:  # запуск цикла на введення математичного оператора
     mathOperator = input("Please, enter +, -, *, / to perform a mathematical operation with entered numbers: ")
     match mathOperator:
         case "+":
@@ -90,13 +90,14 @@ while True:
         case "*":
             print("Product of entered numbers: ", numberOne * numberTwo)
             break
-        case "/":
+        case "/":  # в блоці ділення перехопимо помилку ділення на нуль. Виведемо повідомлення про помилку
             try:
                 print("Quotient of entered numbers: ", numberOne / numberTwo)
                 break
             except ZeroDivisionError as error:
                 print("Division by zero!")
                 break
-        case _:
+        case _:  # блок, на випадок, якщо введене значення відрізняється від чотирьох можливих операторів.
+            # Повідомимо, що введений символ невірний, нагадаємо які можна ввести символи і переходимо в початок цикла
             print("Invalid symbol. Please, use +, -, *, / only!")
             continue
